@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="css/base.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/avalon.js"></script>
+</head>
+<body>
+<div class="yj-nodes">
+    <input class="yj-node-input" type="text"/>
+    <button class="f-btn f-btn-sm f-btn-info">添加</button>
+    <ul class="yj-node-dotted" ms-controller="test">
+        <li><p>第1级第1行</p><p class="yj-node-add" ms-click="add">+</p></li>
+        <li>
+            <ul>
+                <li>第2级第1行</li>
+                <li>第2级第2行</li>
+                <li>……</li>
+            </ul>
+        </li>
+        <li>第1级第3行</li>
+        <li>第1级第4行</li>
+    </ul>
+</div>
+</body>
+<script type="text/javascript">
+     var vm= avalon.define({
+         id:'test',
+         array:[],
+         add:function(){
+
+         }
+     })
+
+</script>
+</html>
